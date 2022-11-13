@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Forum.Data.Entities;
+using Forum.DTOs.Auth;
 using Forum.DTOs.Comment;
 using Forum.DTOs.Post;
 using Forum.DTOs.Topic;
@@ -26,6 +27,8 @@ namespace Forum
             CreateMap<CreateCommentDTO, Comment>();
             CreateMap<UpdateCommentDTO, Comment>();
             CreateMap<Comment, CommentDTO>();
+
+            CreateMap<Users, UserDTO>();
         }
     }
 }

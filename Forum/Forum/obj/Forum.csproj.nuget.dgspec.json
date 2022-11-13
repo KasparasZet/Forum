@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kasparas\\Darbalaukis\\Saitynai\\Forum\\Forum\\Forum.csproj": {}
+    "C:\\Users\\Kasparas\\Darbalaukis\\GitForum\\Forum\\Forum\\Forum.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kasparas\\Darbalaukis\\Saitynai\\Forum\\Forum\\Forum.csproj": {
+    "C:\\Users\\Kasparas\\Darbalaukis\\GitForum\\Forum\\Forum\\Forum.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kasparas\\Darbalaukis\\Saitynai\\Forum\\Forum\\Forum.csproj",
+        "projectUniqueName": "C:\\Users\\Kasparas\\Darbalaukis\\GitForum\\Forum\\Forum\\Forum.csproj",
         "projectName": "Forum",
-        "projectPath": "C:\\Users\\Kasparas\\Darbalaukis\\Saitynai\\Forum\\Forum\\Forum.csproj",
+        "projectPath": "C:\\Users\\Kasparas\\Darbalaukis\\GitForum\\Forum\\Forum\\Forum.csproj",
         "packagesPath": "C:\\Users\\Kasparas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kasparas\\Darbalaukis\\Saitynai\\Forum\\Forum\\obj\\",
+        "outputPath": "C:\\Users\\Kasparas\\Darbalaukis\\GitForum\\Forum\\Forum\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -52,6 +52,18 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

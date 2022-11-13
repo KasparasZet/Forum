@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Forum.Data.Entities;
+using Forum.DTOs.Auth;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Forum
 {
-    public class RestContext : DbContext
+    public class RestContext : IdentityDbContext<Users>
     {
         public DbSet<Topic> Topics { get; set; }
         public DbSet<Post> Posts { get; set; }
