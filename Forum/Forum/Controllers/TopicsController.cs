@@ -11,6 +11,7 @@ using System.Security.Claims;
 namespace Forum.Controllers
 {
     [ApiController]
+    [AllowAnonymous]
     [Route("api/topics")]
     public class TopicsController : ControllerBase
     {
@@ -27,7 +28,6 @@ namespace Forum.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = UserRoles.SimpleUser)]
         public async Task<IEnumerable<TopicDto>> GetAll()
         {
             return (await _topicsRepository.GetAll()).Select(o => _mapper.Map<TopicDto>(o));

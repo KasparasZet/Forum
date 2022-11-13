@@ -17,9 +17,7 @@ namespace Forum
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // !!! DON'T STORE THE REAL CONNECTION STRING THE IN PUBLIC REPO !!!
-            // Use secret managers provided by your chosen cloud provider
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=Forum");
+            optionsBuilder.UseSqlServer("Server=tcp:forumdbserverkz.database.windows.net,1433;Initial Catalog=Forum_db;Persist Security Info=False;User ID=kaspe;Password=Kaspariukas1*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
     }
 }
